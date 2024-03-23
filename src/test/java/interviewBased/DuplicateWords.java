@@ -6,9 +6,10 @@ import java.util.Map;
 public class DuplicateWords {
 
 	public static void main(String[] args) {
-		String name = "What is this String, this is a String Class";
+		String name = "What is this String this is a String Class";
 
 		String[] words = name.split("\\s+");
+		
 
 		// Create a HashMap to store word frequencies
 		Map<String, Integer> wordFreq = new HashMap<>();
