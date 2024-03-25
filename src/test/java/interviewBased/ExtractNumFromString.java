@@ -1,6 +1,6 @@
 package interviewBased;
 
-public class ExtractDigitFromString {
+public class ExtractNumFromString {
 	
 	public static void main(String[] args) {
 		
