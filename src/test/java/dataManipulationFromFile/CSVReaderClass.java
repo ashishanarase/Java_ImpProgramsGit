@@ -11,7 +11,7 @@ public class CSVReaderClass {
 
 	
 	/*There is data related to user information or account details on webpage. Validate that with the
-	Data stored in CSV file on	your local machine */
+	Data stored in CSV file on your local machine */
 	
 	public static void main(String[] args) throws IOException, CsvException {
 

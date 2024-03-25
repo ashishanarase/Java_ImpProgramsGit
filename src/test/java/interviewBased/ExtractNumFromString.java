@@ -8,6 +8,8 @@ public class ExtractNumFromString {
 		
 		String digit = given.replaceAll("[^0-9]", "");
 		System.out.println(digit);
+		int value = Integer.parseInt(digit);
+		System.out.println(value);
 	}
 
 }
