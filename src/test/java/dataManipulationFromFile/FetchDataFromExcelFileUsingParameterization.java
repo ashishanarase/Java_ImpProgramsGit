@@ -2,6 +2,8 @@ package dataManipulationFromFile;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -28,6 +30,13 @@ public class FetchDataFromExcelFileUsingParameterization {
 			//Column
 			String data0 = exrow.getCell(1).getStringCellValue();
 			System.out.println(data0);
+			
+
+			//To set the data in excel file
+			exsheet.getRow(1).createCell(1).setCellValue("New Cell");
+			FileOutputStream fos = new FileOutputStream(exfile);
+			new_book.write(fos);
+			new_book.close();
 		}	
 		
 	}
