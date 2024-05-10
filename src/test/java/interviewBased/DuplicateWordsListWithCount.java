@@ -3,7 +3,7 @@ package interviewBased;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DuplicateWords {
+public class DuplicateWordsListWithCount {
 
 	public static void main(String[] args) {
 		String name = "What is this String this is a String Class";

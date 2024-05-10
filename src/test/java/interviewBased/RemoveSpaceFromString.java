@@ -1,6 +1,6 @@
 package interviewBased;
 
-public class RemoveSpace {
+public class RemoveSpaceFromString {
 
 	public static void main(String[] args) {
 		String st="The Sun Is Brightest Star";

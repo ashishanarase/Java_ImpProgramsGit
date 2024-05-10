@@ -3,7 +3,7 @@ package interviewBased;
 import java.util.HashSet;
 import java.util.Set;
 
-public class DuplicateElements2 {
+public class DuplicateElementsInArray {
 
 	public static void main(String[] args) {
 

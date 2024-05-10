@@ -1,6 +1,6 @@
 package interviewBased;
 
-public class PrimeNumber {
+public class PrimeNumberValidation {
 
 	public static void main(String[] args) {
 
