@@ -5,9 +5,6 @@ public class TryCatchFinally {
 
 	public static void main(String[] args) {
 
-		//	int b = 1/0;
-		//	System.out.println(b);
-
 		try {
 
 			int a = 1/0;
