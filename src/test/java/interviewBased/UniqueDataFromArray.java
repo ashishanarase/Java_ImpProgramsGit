@@ -2,6 +2,7 @@ package interviewBased;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Set;
 
 public class UniqueDataFromArray {
 	public static void main(String[] args) {
@@ -18,7 +19,7 @@ public class UniqueDataFromArray {
 			list.add(10); 
 
 			// Creating a HashSet 
-			HashSet<Integer> set = new HashSet<Integer>(list); 
+			Set<Integer> set = new HashSet<Integer>(list); 
 
 			// Creating a new ArrayList from the HashSet 
 			ArrayList<Integer> uniqueList = new ArrayList<Integer>(set); 
