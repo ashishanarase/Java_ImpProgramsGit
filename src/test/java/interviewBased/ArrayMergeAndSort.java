@@ -1,6 +1,7 @@
 package interviewBased;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayMergeAndSort {
 	
@@ -9,15 +10,18 @@ public class ArrayMergeAndSort {
 		int[] arr1 = {1, 4, 6, 8};
         int[] arr2 = {3, 5, 6, 7};
         
-        ArrayList list = new ArrayList();
+        ArrayList ar = new ArrayList();
         
         for (int i = 0; i<= arr1.length-1; i++) {
        
-        list.add(arr1[i]);
-        list.add(arr2[i]);
+        ar.add(arr1[i]);
+        ar.add(arr2[i]);
         
         }
-        System.out.println(list);
+        System.out.println("Merged Array : "+ar);
+        Collections.sort(ar);
+        System.out.println("Sorted Array : "+ar);
+        
 		
 	}
 
