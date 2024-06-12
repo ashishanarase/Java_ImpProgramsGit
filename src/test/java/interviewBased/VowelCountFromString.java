@@ -1,6 +1,6 @@
 package interviewBased;
 
-public class StringVowelCount {   
+public class VowelCountFromString {   
 	
 	public static void main(String args[]) {
 

@@ -11,6 +11,7 @@ public class CountOfCharactersInEachWord {
 		for (String output : parts) {
 			
 			System.out.println(output + " = " +output.length());
+			//System.out.print(output.length());
 			
 		}
 		
