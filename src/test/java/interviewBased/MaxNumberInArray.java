@@ -21,7 +21,7 @@ public class MaxNumberInArray  {
 			
 			int[] ar2 = {5, 10, 120, 3, 2};
 
-			// Find the maximum number in the array
+			// Find the minimu number in the array
 			int min = ar2[0]; // Assume the first number is the min
 			for (int i = 1; i < ar2.length; i++) {
 				if (ar2[i] < min) {
