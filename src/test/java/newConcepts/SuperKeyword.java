@@ -1,6 +1,7 @@
 package newConcepts;
 
 public class SuperKeyword extends ThisKeyword {
+	
 	public static void main(String[] args) {
 		new SuperKeyword(10,20);
 		
