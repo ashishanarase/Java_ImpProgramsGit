@@ -1,6 +1,7 @@
 package advanceSeleniumTask;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -25,22 +26,26 @@ public class AmazonLowestPriceScraper  {
 		
 		txtBox_search_homePage.sendKeys("My Phone");
 		
-		btn_search_homePage.click();		
+		btn_search_homePage.click();	
 		
-		List<WebElement> priceElements = driver.findElements(By.xpath(""));
-		
+		 // Locate price elements
+        List<WebElement> priceElements = driver.findElements(By.cssSelector("span.a-price-whole"));
+        
 		// Store the prices in a list
         List<Integer> prices = new ArrayList<>();
         for (WebElement priceElement : priceElements) {
-            String priceText = priceElement.getText().replace(",", "");
+        	String priceText = priceElement.getText().replaceAll(",", "");
             try {
                 int price = Integer.parseInt(priceText);
                 prices.add(price);
             } catch (NumberFormatException e) {
                 e.printStackTrace();  // Handle any parsing errors here
             }
-        }
-		
+        }	
+        
+        Collections.sort(prices);
+        
+        System.out.println("Lowest price from the list of Phones = ₹."+prices.get(0)+".00/-");
 	}
 
 }
