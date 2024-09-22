@@ -19,6 +19,8 @@ public class AmazonCartValueValidation {
 	private static int maxWaitTime = 30;
 
 	private static String appUrl = "https://www.amazon.in";
+	
+	public static WebDriver driver;
 
 	private static String searchKey = "One Plus Mobiles";
 
@@ -26,7 +28,7 @@ public class AmazonCartValueValidation {
 
 		WebDriverManager.chromedriver().setup();		
 
-		WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -79,7 +81,7 @@ public class AmazonCartValueValidation {
 
 		String globalRatingCount = txt_globalRatingCount1_searchResultPage.getText();
 
-		System.out.println("Ratings "+ratingCount + " with total"+ globalRatingCount);
+		System.out.println("Ratings "+ratingCount + " with total "+ globalRatingCount);
 
 		img_product1_searchResultPage.click();
 
@@ -103,7 +105,7 @@ public class AmazonCartValueValidation {
 
 
 		WebElement txt_productPrice_productPage = wait.until(ExpectedConditions.visibilityOf
-				(driver.findElement(By.xpath("//span[@id='productTitle']/following::span[20]"))));
+				(driver.findElement(By.xpath("//span[@id='productTitle']/following::span[19]"))));
 
 		String productPrice = txt_productPrice_productPage.getText();
 
