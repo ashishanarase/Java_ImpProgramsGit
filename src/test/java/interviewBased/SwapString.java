@@ -30,7 +30,6 @@ public class SwapString {
 		
 		new3 = new3 + new4;
 	
-		
 		new4 = new3.substring(0, new3.length()-new4.length());
 		
 		new3 = new3.substring(new4.length());
