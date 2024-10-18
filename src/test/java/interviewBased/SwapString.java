@@ -29,6 +29,7 @@ public class SwapString {
 		System.out.println("Before swaping String 4 : "+new4);
 		
 		new3 = new3 + new4;
+	
 		
 		new4 = new3.substring(0, new3.length()-new4.length());
 		
