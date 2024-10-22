@@ -4,9 +4,15 @@ public class CharArray {
 	
 	public static void main(String[] args) {
 		
-		char [] ch = {'a','s','h','i','s','h'};
+		char [] charArray = {'a','s','h','i','s','h'};
 		
-		System.out.println(ch);
+		 // Convert char array to String
+        String str = new String(charArray);
+
+        // Print the result
+        System.out.println("Char Array to String: " + str);
 	}
+	
+	
 
 }
