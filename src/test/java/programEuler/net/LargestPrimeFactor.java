@@ -6,48 +6,55 @@ public class LargestPrimeFactor {
 
 	public static void main(String[] args) {
 
-		int a = 13195;
+		//What is the largest prime factor of the number
+		
+		 int a = 13195;
 
-		ArrayList <Integer> list = new ArrayList <>();
+	        // List to store factors of 'a'
+	        ArrayList<Integer> factorsList = new ArrayList<>();
 
-		for (int i = 2 ; i<a; i++) {
+	        // Find factors of 'a'
+	        for (int i = 2; i <= a; i++) {
+	            if (a % i == 0) {
+	                factorsList.add(i);
+	            }
+	        }
 
-			if ((a%i == 0)) {
+	        System.out.println("Factors: " + factorsList);
 
-				list.add(i);
+	        // List to store non-prime numbers
+	        ArrayList<Integer> nonPrimeList = new ArrayList<>();
 
-			}
+	        // List to store prime numbers
+	        ArrayList<Integer> primeList = new ArrayList<>();
 
-		}
+	        // Separate prime and non-prime numbers from the factors list
+	        for (int factor : factorsList) {
+	            if (isPrime(factor)) {
+	                primeList.add(factor);
+	            } else {
+	                nonPrimeList.add(factor);
+	            }
+	        }
 
-		System.out.println(list);
-		ArrayList <Integer> list2 = new ArrayList <>();
+	        // Output the non-prime and prime lists
+	        System.out.println("Non-prime numbers: " + nonPrimeList);
+	        System.out.println("Prime numbers: " + primeList);
+	        
+	        System.out.println("Largest Prime Factor of given number "+a+" :" + primeList.get(primeList.size()-1));
+	    }
 
-		for (int b : list) {
+	    // Method to check if a number is prime
+	    public static boolean isPrime(int number) {
+	     
+	        for (int i = 2; i <= Math.sqrt(number); i++) {
+	            if (number % i == 0) {
+	                return false; // Found a divisor, not a prime number
+	            }
+	        }
 
-			for (int c = 2; c <= b-1; c++) {
-
-				int factor = b % c;
-				if (factor == 0) {
-					
-					list2.add(b);
-
-				}
-
-				
-
-
-			}
-
-		}
-
-
-
-
-		System.out.println(list2);
-
-
-
+	        return true; // No divisors found, it's a prime number
+	    }
+	    
+	 
 	}
-
-}
