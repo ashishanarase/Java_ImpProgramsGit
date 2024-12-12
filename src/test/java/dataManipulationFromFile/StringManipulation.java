@@ -49,6 +49,15 @@ public class StringManipulation {
 		String numberBeforeDecimal = parts[0];  // The first part is the number before the decimal point
 
 		System.out.println("Number before the decimal point: " + numberBeforeDecimal);
+		
+		//String Formating
+		String baseString = "My name is %s and I am %d years old.";
+		
+		String formatted1 = String.format(baseString, "Ashish", 31);
+		System.out.println(formatted1);
+		
+		String formatted2 = String.format(baseString, "Jaydeep", 45);
+		System.out.println(formatted2);
 	}
 }
 
