@@ -11,6 +11,12 @@ public class CharArray {
 
         // Print the result
         System.out.println("Char Array to String: " + str);
+        
+        String str2 = "anarase";
+        
+        char [] charArray2 = str2.toCharArray();
+        
+        System.out.println(charArray2[1]);
 	}
 	
 	
