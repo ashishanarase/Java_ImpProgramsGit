@@ -18,11 +18,11 @@ public class ConvertFirstLetterUpperCase {
 				.append(" ");
 			}
 		}
-		result.toString().trim();
+		String capitalized = result.toString().trim();
 
 
 		System.out.println("Original sentence: " + sentence);
-		System.out.println("Capitalized sentence: " + result.toString().trim());
+		System.out.println("Capitalized sentence: " + capitalized);
 
 	}
 }
