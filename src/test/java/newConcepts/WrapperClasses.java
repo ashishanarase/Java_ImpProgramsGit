@@ -4,7 +4,7 @@ public class WrapperClasses {
 
 	public static void main(String[] args) {
 
-		//String to int: data coversion
+		//String to int: data conversion
 		String x = "100";
 		System.out.println(x+20);
 		
