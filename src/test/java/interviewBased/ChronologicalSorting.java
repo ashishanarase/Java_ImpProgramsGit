@@ -27,7 +27,7 @@ public class ChronologicalSorting {
 			monthOrder.put("DEC", 12);
 
 			// Sort the array of months based on the chronological order
-		//	Arrays.sort(months, Comparator.comparingInt(month -> monthOrder.get(month)));
+			Arrays.sort(months, Comparator.comparingInt(month -> monthOrder.get(month)));
 					
 			// Print the sorted array
 			System.out.println("Sorted Months (Chronological Order):");
