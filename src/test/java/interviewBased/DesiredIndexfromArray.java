@@ -9,7 +9,6 @@ public class DesiredIndexfromArray {
 
 		int ar [] = {7,5,3,1,9,8,4,2,6};
 
-		int secondL = ar[0];
 		//bubble sort
 		for (int i = 0 ; i <=ar.length;i++) {
 			for (int j=0;j<ar.length-i-1;j++) {
